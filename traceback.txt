@@ -1,0 +1,25 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+After initialization, but before game start.
+Exception: DirectSoundCreate: No audio device found
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "C:\Users\u124274\Desktop\renpy-6.99.10-sdk\renpy\bootstrap.py", line 277, in bootstrap
+    renpy.main.main()
+  File "C:\Users\u124274\Desktop\renpy-6.99.10-sdk\renpy\main.py", line 459, in main
+    renpy.display.core.Interface()
+  File "C:\Users\u124274\Desktop\renpy-6.99.10-sdk\renpy\display\core.py", line 1442, in __init__
+    renpy.audio.audio.init()
+  File "C:\Users\u124274\Desktop\renpy-6.99.10-sdk\renpy\audio\audio.py", line 755, in init
+    renpysound.init(renpy.config.sound_sample_rate, 2, bufsize, False)
+  File "renpy/audio/renpysound.pyx", line 192, in renpy.audio.renpysound.init (gen\renpy.audio.renpysound.c:3950)
+    check_error()
+  File "renpy/audio/renpysound.pyx", line 61, in renpy.audio.renpysound.check_error (gen\renpy.audio.renpysound.c:954)
+    raise Exception(e)
+Exception: DirectSoundCreate: No audio device found
+
+Windows-7-6.1.7601-SP1
+Ren'Py 6.99.10.1227
+test 0.0
